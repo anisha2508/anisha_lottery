@@ -1,0 +1,42 @@
+.b{
+	background:url(final.jpg);
+	height: 1000px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+h1{
+	color:rgb(255, 204, 0);
+	font-size: 100px;
+	padding-top: 150px;
+	padding-left: 470px;
+	margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+}
+.wheel{
+	height:300px;
+	width:300px;
+	display: block;
+	margin-right: auto;
+	margin-left: 550px;
+	margin-top: 20px;
+	opacity: 0.9;
+	-webkit-animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+h2{
+	color:rgb(255, 204, 0);
+	font-size: 65px;
+	padding-top: 5px;
+	padding-left: 500px;
+	margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+	}
