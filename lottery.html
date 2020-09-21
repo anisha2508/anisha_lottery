@@ -3,13 +3,39 @@
 <head>
 	<title>LOTTERY</title>
 	<link rel="stylesheet" type="text/css" href="lotterystyle.css">
+	
 </head>
 <body>
 	<div class="b">
 		<h1>LOTTERY</h1>
 		<img src="wff.png" class="wheel">
 		<h2>Ready To Win?</h2>
+		<div class="button1">
+	    <h4>ALL THE BEST!</h4>
+		<button class="spin" onclick="getRndInteger(1,10)">SPIN</button>
+		</div>
+		<h3>Enter Your Lucky Number</h3>
+		<div class="enter">
+		<input type="Number" name="Number">
+		<button onclick="res()">Submit</button>
+	    </div>
+	    <h5>Result</h5>
+	    <img src="result.jpg" class="result">
+		
 	</div>
-     
+    <script>
+    	var num;
+		function getRndInteger(min, max) {
+           num= Math.floor(Math.random() * (max - min)) + min;
+           alert("Your LUCKY Number is: " + num);}
+        function res()
+        {
+        	if(num==5)
+        		 document.getElementByClass("result").src = "2.jpg";
+        	else
+        		 document.getElementByClass("result").src = "lose.jpg";
+        }
+       
+	</script> 
 </body>
 </html>
