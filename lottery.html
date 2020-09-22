@@ -20,7 +20,8 @@
 		<button onclick="res()">Submit</button>
 	    </div>
 	    <h5>Result</h5>
-	    <img src="result.jpg" class="result">
+	    <img src="result.jpg" id="result">
+	     <footer>&copy; LOTTERY</footer>
 		
 	</div>
     <script>
@@ -31,9 +32,9 @@
         function res()
         {
         	if(num==5)
-        		 document.getElementByClass("result").src = "2.jpg";
+        		 document.getElementById("result").src = "2.jpg";
         	else
-        		 document.getElementByClass("result").src = "lose.jpg";
+        		 document.getElementById("result").src = "lose.jpg";
         }
        
 	</script> 
